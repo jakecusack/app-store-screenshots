@@ -1,0 +1,32 @@
+/*
+ * Brand CSS custom properties extracted from logo.
+ *
+ * Primary: #2352CC (royal blue)
+ * Background gradient: #EEF2FF → #FFFFFF
+ *
+ * Import in your layout.tsx or globals.css:
+ *   @import "../branding/colors.css";
+ */
+
+:root {
+  /* Core brand */
+  --brand-primary: #2352CC;
+  --brand-primary-hover: #1B43A8;
+  --brand-primary-light: #6B8FFF;
+
+  /* Background gradient */
+  --brand-bg-start: #EEF2FF;
+  --brand-bg-end: #FFFFFF;
+  --brand-bg: linear-gradient(180deg, var(--brand-bg-start) 0%, var(--brand-bg-end) 100%);
+
+  /* Text */
+  --brand-fg: #0F172A;
+  --brand-fg-muted: #64748B;
+
+  /* Dark variant */
+  --brand-dark-bg-start: #0B1120;
+  --brand-dark-bg-end: #162044;
+  --brand-dark-fg: #F1F5F9;
+  --brand-dark-accent: #6B8FFF;
+  --brand-dark-muted: #94A3B8;
+}
